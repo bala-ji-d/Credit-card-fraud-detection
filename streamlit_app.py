@@ -79,7 +79,7 @@ if st.button("Detection Result"):
         try:
             # Make API request
             response = requests.post(
-                "http://localhost:8105/predict",  # Update this URL to match your FastAPI deployment
+                "https://credit-card-fraud-detection-123.streamlit.app/predict",  # Update this URL to match your FastAPI deployment
                 json=values,
                 headers={"Content-Type": "application/json"}
             )
